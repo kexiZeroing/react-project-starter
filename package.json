@@ -1,15 +1,17 @@
 {
-  "name": "new-app",
+  "name": "react-project-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "create a React app from scratch",
   "main": "index.js",
+  "homepage": "https://kexizeroing.github.io/react-project-starter/",
   "scripts": {
     "start": "webpack serve --open 'Google Chrome'",
     "build": "webpack --mode production",
-    "clean": "rm -r dist/*"
+    "clean": "rm -r dist/*",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Kexi",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -18,6 +20,8 @@
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^4.5.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.3.0",
