@@ -3,6 +3,7 @@ import "./App.css";
 import { hot } from 'react-hot-loader/root'
 import { Hello } from "./Hello";
 import Logo from './images/logo.png';
+import "tailwindcss/tailwind.css"
 
 function App() {
   return (
@@ -11,6 +12,11 @@ function App() {
       <Hello name="John" />
       <img src={Logo} alt="Logo" width="100" />
       <p className="text-with-bg">I have a background image</p>
+      <button
+        className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
+      >
+        Find Friends
+      </button>
     </div>
   );
 }
